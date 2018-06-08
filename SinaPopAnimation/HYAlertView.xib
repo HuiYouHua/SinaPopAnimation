@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HYAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okd-5n-epj">
+                    <rect key="frame" x="163" y="618" width="49" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="33h-5R-BLX"/>
+                        <constraint firstAttribute="width" constant="49" id="fkp-eq-Yet"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="add"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrF-WZ-8Pi">
+                    <rect key="frame" x="0.0" y="617" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.90321621192893398" green="0.90321621192893398" blue="0.90321621192893398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9bQ-X8-T2u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UrF-WZ-8Pi" secondAttribute="trailing" id="79g-qH-GQk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Okd-5n-epj" secondAttribute="bottom" id="87e-mF-xWo"/>
+                <constraint firstItem="UrF-WZ-8Pi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pjf-0g-abd"/>
+                <constraint firstItem="Okd-5n-epj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q7f-Am-bJQ"/>
+                <constraint firstItem="Okd-5n-epj" firstAttribute="top" secondItem="UrF-WZ-8Pi" secondAttribute="bottom" id="t8T-a6-vxX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="25" height="25"/>
+    </resources>
+</document>
